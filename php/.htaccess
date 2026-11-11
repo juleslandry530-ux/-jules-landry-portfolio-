@@ -1,0 +1,4 @@
+# Réglages Apache du portfolio (ignoré si ton hébergeur n'utilise pas Apache)
+Options -Indexes
+AddDefaultCharset UTF-8
+DirectoryIndex index.php

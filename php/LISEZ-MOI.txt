@@ -1,0 +1,38 @@
+PORTFOLIO - YAO Jules Landry
+============================
+
+LANCER
+- En local : installe XAMPP/WAMP/Laragon, copie le dossier "portfolio" dans htdocs (ou www),
+  puis ouvre http://localhost/portfolio/
+- En ligne : envoie tout le dossier sur ton hébergeur PHP (7.4 ou plus).
+- Ou, avec PHP installé : php -S localhost:8000 dans le dossier, puis http://localhost:8000
+
+IMAGE DU CADRE
+- Le cadre arrondi de l'accueil affiche ton logo YJL (img/logo-yjl.png, modifiable : img/logo-yjl.svg).
+- Pour changer d'image : ligne 'photo' dans config.php.
+- Le petit rond en haut à gauche affiche tes initiales (YJL).
+- Forme du cadre : css/style.css, variable --forme-photo (cercle, carré arrondi, arche).
+
+MODIFIER LE CONTENU (sans toucher au code)
+- config.php : nom, textes, compétences, services, projets, parcours, contact, CV.
+- Ajouter un projet : copie un bloc [ 'titre' => ... ] dans 'projets'.
+- Ajouter une section : ajoute-la dans 'menu' (config.php) et copie le modèle
+  commenté dans index.php.
+
+ADAPTER LE STYLE
+- css/style.css : couleurs et polices en haut du fichier (:root).
+
+FORMULAIRE DE CONTACT
+- Change 'email_reception' dans config.php.
+- Chaque message est aussi enregistré dans data/messages.txt (dossier protégé par .htaccess).
+- En local, mail() ne marche souvent pas : consulte data/messages.txt.
+
+PAGES QUE TU CRÉES
+- Mets-les dans un dossier (ex : projets/mon-site/) et renseigne 'lien' dans config.php.
+
+CV
+- Le bouton « Voir et télécharger mon CV » ouvre cv.php : le CV s'affiche (PDF), puis on peut le télécharger.
+- Fichiers : cv/CV-YAO-Jules-Landry.docx (Word) et cv/CV-YAO-Jules-Landry.pdf (PDF).
+- Pour mettre ton propre CV : remplace ces deux fichiers en gardant les mêmes noms
+  (Word : Fichier > Enregistrer sous > PDF pour faire le PDF).
+- Autres noms de fichiers : change 'cv' et 'cv_pdf' dans config.php.
